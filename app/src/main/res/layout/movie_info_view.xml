@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/movie_poster_id"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_toRightOf="@+id/movie_poster_id"
+                  android:layout_marginLeft="30dp">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                  android:text="Release Date: "
+                  android:id="@+id/release_date_title"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/movie_release_date"
+                  android:text="2015-02-09"
+                  android:textSize="15sp"
+                  android:layout_marginTop="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Average Rating:"
+                  android:layout_marginTop="15dp"
+                  android:textSize="20sp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/movie_rating"
+                  android:textSize="15sp"
+                  android:text="5.5/10"
+                  android:layout_marginTop="10dp"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark As \n Favorite"
+                android:background="#0ab562"
+                android:layout_marginTop="20dp"
+                android:id="@+id/favorite_button"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
